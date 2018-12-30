@@ -1,0 +1,327 @@
+* {
+  	margin: 0;
+  	padding: 0;
+  	box-sizing: border-box;
+}
+
+body {
+    background-color: #02010a;
+    font-family: 'Dancing Script', cursive;
+}
+
+.contenido {
+  	width: 100%;
+  	max-width: 900px;
+  	margin: auto;
+
+	  /* Flexbox */
+  	display: flex;
+  	flex-flow: row wrap;
+}
+
+header {
+  	background-color: #5b7989;
+  	width: 100%;
+  	padding: 2%;
+    border-radius: 10px 10px 0px 0px;
+
+  	/* Flexbox */
+  	display: flex;
+  	justify-content: space-between;
+  	align-items: center;
+
+  	flex-direction: row;
+  	flex-wrap: wrap;
+}
+
+header .logo {
+    font-size: 2.2em;
+    text-shadow: 2px 2px #02010a;
+    color: white;
+}
+
+header .logo a {
+  	color: white;
+  	text-decoration: none;
+}
+
+header nav {
+  	width:50%;
+
+    /* Flexbox */
+  	display: flex;
+  	flex-wrap: wrap;
+  	align-items: center;
+}
+
+header nav a {
+    width: auto;
+  	color: white;
+    font-size: 1.2em;
+  	text-align: center;
+  	text-decoration: none;
+  	padding: 1%;
+
+  	/* Flexbox */
+  	flex-grow: 1;
+}
+
+header nav a:hover {
+  	background: #5198BB;
+    border-radius: 5px;
+}
+
+header nav a.active {
+  	color: white !important;
+    text-shadow: 3px 3px #02010a !important;
+    font-size: 1.6em;
+
+}
+
+.section1 {
+    background-color: #82c3a6;
+    width: 100%
+    height: auto;
+    text-align: center;
+}
+
+.section1 .imagencentral {
+    width: 83%;
+    margin: 1%;
+}
+
+    /* Sombra general para imagenes */
+img {
+    box-shadow: 2px 2px 2px 2px #02010a;
+}
+
+.section2 {
+    background-color: #d5c75f;
+    width: 100%;
+    height: auto;
+
+    /* Flexbox */
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.section2 .galeria {
+    padding: 0 2%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    width: 50%;
+
+    /* Flexbox */
+  	display: flex;
+  	flex-wrap:wrap;
+}
+
+.section2 .galeria .gallery {
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.section2 .galeria .gallery .imasec1 {
+    border: 1px solid;
+    width: 100%;
+    height: auto;
+    -webkit-transform: rotate();
+    transform: rotate();
+}
+
+.section2 .galeria .gallery .imasec1:hover {
+    box-shadow: 0px 0px 5px 5px #82c3a6;
+    border: 2px solid black;
+    transform: rotate(10deg);
+}
+
+
+.section2 .galeria .gallery .imasec2 {
+    border: 1px solid;
+    width: 100%;
+    height: auto;
+    -webkit-transform: translate();
+    transform: translate();
+}
+
+.section2 .galeria .gallery .imasec2:hover {
+    box-shadow: 0px 0px 5px 5px #82c3a6;
+    border: 2px solid black;
+    transform: translate(20px, -5px);
+}
+
+.section2 .galeria .gallery a {
+    font-size: 1.2em;
+    flex-grow: 1;
+    color: black;
+    text-align: center;
+    text-decoration:none;
+}
+
+.section2 .galeria .gallery a:hover {
+    color: #FC04A6;
+}
+
+    /* Footer */
+
+footer {
+    background-color: #C6d5c5;
+    border-radius: 0px 0px 10px 10px;
+  	width: 100%;
+  	padding: 2%;
+
+  	/* Flexbox */
+  	display: flex;
+  	flex-wrap:wrap;
+}
+
+footer .links {
+    width: 100%;
+
+    /* Flexbox */
+  	display: flex;
+  	flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer .links .redfooter {
+    font-size: 1.2em;
+    flex-grow: 1;
+    color: black;
+    text-shadow: 0.5px 0.5px #02010a;
+  	padding: 1%;
+  	text-align: center;
+  	text-decoration:none;
+}
+
+footer .links .redfooter:hover {
+  	background: #ADE7DB;
+    border-radius: 5px;
+}
+
+.navfooter{
+    margin: 1%;
+}
+
+.lineafooter {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.textofooter {
+    text-align: center;
+}
+
+/*Página Paisajes y Retratos*/
+
+.galeria {
+    background-color: #d5c75f;
+}
+
+.galeria .flex-container {
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    /* Flexbox */
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+
+}
+
+.galeria .flex-container > div {
+    margin-top: 20%;
+    margin-bottom: 20%;
+    width: 260px;
+    height: auto;
+    margin: 1%;
+}
+
+.galeria .flex-container > div > picture > img {
+    width: 100%;
+}
+
+.galeria .flex-container > div > picture > img#img1 {
+    filter: blur(10px);
+}
+
+.galeria .flex-container > div > picture > img#img2, #img4, #img6 {
+    filter: grayscale(100%);
+}
+
+.galeria .flex-container > div > picture > img#img3 {
+    filter: sepia(90%);
+}
+
+/*Animaciones*/
+.contenido {
+    position: relative;
+    -webkit-animation: mymove 1s; /* Safari 4.0 - 8.0 */
+    animation: mymove 1s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    0%   {margin-top: 150%;}
+    60%  {margin-top: -5%;}
+    100%  {margin-top: 0%;}
+}
+
+@keyframes mymove {
+    0%   {margin-top: 150%;}
+    60%  {margin-top: -5%;}
+    100%  {margin-top: 0%;}
+}
+
+@media screen and (max-width: 900px) {
+  	.contenido {
+  		flex-direction: column;
+  	}
+
+  	header {
+  		flex-direction: column;
+  		padding:0;
+  	}
+
+  	header .logo {
+  		margin:20px 0;
+      width: 100%;
+      text-align: center;
+  	}
+
+  	header nav {
+  		width: 100%;
+  	}
+
+  	.section2 {
+  		flex-direction: column;
+      align-items: center;
+      width: 100%;
+  	}
+
+    .section2 .galeria {
+    flex-direction: column;
+    width: 87%;
+    }
+
+    .gallery {
+      width: 100%;
+    }
+
+    footer {
+      width: 100%;
+    }
+
+    .navfooter {
+      align-items: flex-start;
+      justify-content: space-around;
+      width: 100%;
+    }
+    /*Página Paisajes y retrato*/
+
+    .galeria .flex-container > div {
+    flex-direction: column;
+    width: 87%;
+    }
+}
